@@ -1,0 +1,356 @@
+/*Para copiar las clases de bootstrap en flex he cogido el metodo del archivo css del bootstrap y lo he metido en mi css para que quedara el boton igual*/
+
+*{
+    margin: 0;
+    padding: 0;	
+}
+.redIma{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    width: 100%;
+    background-color: #D8E4F2; 
+}
+#encabezado{
+    width:100%;
+    background-color: skyblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#encabezado div span{color:white;}
+#contenedor{
+    width: 100%;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 4px 3px 20px skyblue;
+}
+.bordebotuonblue{
+    color:white;
+    background-color:skyblue;
+    border-bottom: 2px solid skyblue;
+}
+.mencabe{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;  
+    padding:0px;
+        max-height: 190px;
+}
+.icono{  
+    max-height: 50px;
+    min-width: 30px;
+}
+.logomin{
+
+    min-width: 200px;  
+
+
+}
+#divIconosLogin{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ---------- IDIOMA -----------*/
+.container-banderas form {
+    display: inline-block;
+}
+.container-banderas input[type="image"] {
+    width: 40px;
+    margin: 0px 5px;
+}
+.container-banderas input:hover{
+    transform: scale(1.15);
+    transition-property: transform;
+    transition-duration: 0.2s;
+    box-shadow: 1px 1px 8px #000;
+}
+/* FIN IDIOMA*/
+
+/*---------------------- NAV ---------------------*/
+
+nav{
+    position: relative;
+    width: 100%;
+    background-color:#FFFFFF;
+    border-top: 2px solid dodgerblue;
+    border-bottom: 2px solid dodgerblue;
+    z-index: 1000;/*Para situarlo por encima del texto siemre*/
+    padding: 0;
+    margin: 0;
+}
+nav div{
+    padding: 0;
+    margin: 0;
+}
+nav div ul{
+    list-style: none;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav div ul li{    
+    display: inline-block;
+    position: relative;
+    text-align: center;	
+    font-weight: bold;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+/*id para mayor especifidad*/
+#navP div ul li a{
+    color: black;
+
+}
+nav div ul li a{
+    display: block;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+nav div ul li:hover,nav ul li:active{
+    background: dodgerblue;
+    color:black;
+}
+
+nav div ul li a img{
+    margin-right: 10px; 
+    width: 22px;
+}
+.flexa{  
+    flex-direction: column;
+    align-items: center;
+
+}
+/*---------------------- FIN NAV ---------------------*/
+
+/*---------------------- breadcrumb(migas de pan) ---------------------*/
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+/*---------------------- breadcrumb ---------------------*/
+
+
+/*----------------------CUERPO---------------------*/
+section{
+    padding: 5px 20px;
+    margin: 20px 0px;
+}
+
+#contacto h1{
+    text-align: center;
+    border-bottom: 2px solid dodgerblue;;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    font-size: 2.5em;
+    color: black;
+    text-shadow: 0px 0px 1px #320101;
+}
+
+
+/*--------------- Formulario de consulta ------------------*/
+
+#consulta h3{
+    margin-bottom:10%; 
+    font-style:italic; 
+    text-align:center;
+}
+
+#form1 {
+
+    background-color: skyblue;
+    box-shadow: 4px 3px 15px #006400bf;
+    padding:20px;
+    margin: 0 50px 0 50px;
+    margin:auto;  
+    border: 2px solid black;
+    border-radius:15px;
+    position:relative;
+    font-weight:bold; 
+}
+
+#form1 input,#form1 select,#form1 label,#form1 textarea{
+    font-size:15px; 
+    margin-bottom:2px;
+} 
+
+#form1 input, #form1 select, #form1 textarea{
+    /* width:450px;*/
+    width:100%;
+    border: 1px solid #00B97F; 
+    margin-bottom:20px; 
+    padding:4px;
+}
+
+#form1 textarea{
+    height:200px;
+}
+
+#form1 .requerido{   
+    color:#F00;
+}
+
+#form1 input:focus, #form1 select:focus, #form1 textarea:focus{
+    border: 1px solid #2DAFC5;
+    background-color: #CCE8DF;
+}
+
+#form1 #submit-button{
+    width: 100px;
+    padding: 10px;
+    background-color:#333;
+    color:#FFF;
+    border:none;
+    display:block;
+    float:right;
+    background-color:#2DAFC5;	
+    border-radius:15px;
+}
+#form1 #submit-button:hover{
+    background-color: #00B97F;
+}
+
+#required{
+    font-style:italic;
+}
+
+/*  ----- FOOTER -----*/
+footer{
+    margin-top: 20px;
+}
+.fondofooter{
+    height: 219px;
+    background: url("../../images/footer1.jpg") no-repeat bottom;  
+    margin: 0 auto;
+    width: 619px;
+}
+#contenedor{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+a:visited{
+    color:black;
+    text-decoration: none;
+}
+a:link{
+     color:black;
+    text-decoration: none;   
+    
+}
+
+/*media query para resposive*/
+
+
+#divIconosLogin{
+    width: 30%;
+}
+.iconitos{
+    width:100%;
+}
+#navP{
+ margin-top: 100px;   
+}
+
+
+
+
+/*------------------------------------------------------*/
+
+#contenedor {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (max-width: 575px) {
+
+    nav{
+        background-color: dodgerblue;
+    }
+
+    nav ul li a{
+        border-top:white 2px solid;
+        background-color: dodgerblue;
+    }
+}
+@media (min-width: 576px) {
+    #contenedor {
+        max-width: 540px;
+    }
+}
+@media (min-width: 576px) {
+    #contenedor {
+        max-width: 540px;
+    }
+    .contenido{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;        
+    }
+    .contenido:last-child{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;        
+    }
+}
+
+@media (min-width: 768px) {
+    #contenedor {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    #contenedor {
+        max-width: 960px;
+    }
+    #form1{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    #contenedor {
+        max-width: 1140px;
+    }
+}

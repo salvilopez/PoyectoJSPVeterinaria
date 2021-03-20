@@ -1,0 +1,45 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    width:100%;
+    padding-top:50px;
+}
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+#botones{
+
+    width:60%;
+    margin:0 auto;
+    background-color:blue;
+}
+#botones form{
+    height:40px;
+    width:16.5%;
+    display:block;
+    float:left;
+    clear:none;
+}
+#botones form input{
+    width:100%;
+    height:100%;
+}
+#tablaDatos{
+
+    width: auto;
+
+
+    margin: 5%;
+    text-align: center;
+}
+#tablaDatos img{
+    width: 70px;
+    height: 70px;
+}
+.redIma{
+    max-width: 100%;
+    height: auto;
+}

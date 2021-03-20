@@ -1,0 +1,483 @@
+/*Para copiar las clases de bootstrap en flex he cogido el metodo del archivo css del bootstrap y lo he metido en mi css para que quedara el boton igual*/
+
+/*---------------------- RESETEO ----------------------*/
+
+/* ---------- IDIOMA -----------*/
+.container-banderas form {
+    display: inline-block;
+}
+.container-banderas input[type="image"] {
+    width: 40px;
+    margin: 0px 5px;
+}
+.container-banderas input:hover{
+    transform: scale(1.15);
+    transition-property: transform;
+    transition-duration: 0.2s;
+    box-shadow: 1px 1px 8px #000;
+}
+/* FIN IDIOMA*/
+.bordebotuonblue{
+    color:white;
+    background-color:skyblue;
+    border-bottom: 2px solid skyblue;
+}
+.mencabe{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/*---------------------- NAV ---------------------*/
+.redIma{
+    max-width: 100%;
+    height: auto;
+}
+nav{
+    position: relative;
+    width: 100%;
+    background-color:#FFFFFF;
+    border-top: 2px solid dodgerblue;
+    border-bottom: 2px solid dodgerblue;
+    z-index: 1000;/*Para situarlo por encima del texto siemre*/
+    padding: 0;
+    margin: 0;
+}
+nav div{
+    padding: 0;
+    margin: 0;
+}
+nav div ul{
+    list-style: none;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav div ul li{    
+    display: inline-block;
+    position: relative;
+    text-align: center;	
+    font-weight: bold;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+/*id para mayor especifidad*/
+#navP div ul li a{
+    color: black;
+
+}
+nav div ul li a{
+    display: block;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+nav div ul li:hover,nav ul li:active{
+    background: dodgerblue;
+    color:black;
+}
+
+nav div ul li a img{
+    margin-right: 10px; 
+    width: 22px;
+}
+.flexa{  
+    flex-direction: column;
+    align-items: center;
+
+}
+/*---------------------- FIN NAV ---------------------*/
+
+/*---------------------- breadcrumb(migas de pan) ---------------------*/
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+/*---------------------- breadcrumb ---------------------*/
+
+
+.margintop{
+    margin-top: 20px;    
+
+
+}
+
+#encabezado{
+    width:100%;
+    background-color: skyblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#encabezado div span{color:white;}
+body{
+    width: 100%;
+    background-color: #D8E4F2; 
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;  
+    padding:0px;
+    max-height: 190px;
+}
+.icono{  
+    max-height: 50px;
+    min-width: 30px;
+}
+.logomin{
+
+    min-width: 200px;  
+
+
+}
+#divIconosLogin{
+    display: flex;
+    flex-wrap: wrap;
+}
+#login{
+    display:none;
+}
+.tam p{
+    font-size: 1vw;
+    width: 100%;
+    margin: 10px;
+}
+a{color:blue;
+  text-decoration: none;}
+a:visited{
+    color:blue;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.tam{
+    width: 100%;
+}
+
+/*  ----- FOOTER -----*/
+footer{
+    margin-top: 20px;
+}
+.fondofooter{
+    height: 219px;
+    background: url("../../images/footer1.jpg") no-repeat bottom;  
+    margin: 0 auto;
+    width: 619px;
+}
+
+.liststylelone{
+    list-style: none;
+
+}
+.wboton{
+    width: 30%;
+    margin-left:5px;
+}
+.fleft{
+
+    float: left;   
+}
+.tcenter{
+    text-align: center;
+}
+
+/*---boton--*/
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+    }
+}
+
+.btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+#titulo{
+    width: 100%;
+    background-color: skyblue;
+}
+#titulo h1{
+    border-bottom: 2px solid blue;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    color: black;
+    text-shadow: 0px 0px 1px blue;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#cita{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border:dotted skyblue 2px;
+    align-items: center;
+    /* alineacion horizontal */
+    justify-content: center;
+    min-width: 300px;
+
+}
+#cita form{
+    width: auto;
+}
+#cita form div{
+    width: 300px;
+}
+#cita form div{
+    margin-bottom:10px;
+}
+#cita form h3{
+    text-align: center;
+}
+
+/*---- TABLA CITAS -------------*/
+#citatorio {border-collapse: collapse;  width: 90%; margin: 0 auto}
+
+#citatorio tr:not(:first-child), #citatorio td { transition: .8s ease-in; } 
+
+#citatorio tr:hover:not(:first-child), tr:hover td:empty {
+    background: #d6ecf2; pointer-events: visible;
+}
+#citatorio tr:hover:not(:first-child){ 
+    transform: scale(1.01); box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}
+/* ----- FIN TABLA CITAS-----*/
+
+/* ----- CONVERTIR SUBMIT A ENLACE ------*/
+.enlace {
+    display:inline;  
+    text-decoration:none;
+    border:0;
+    padding:0;
+    margin:0;
+    background:none;
+    color: crimson;
+    font-family: arial, sans-serif;
+    font-size: 1em;
+    line-height:1em;
+}
+
+.enlace:hover {  
+    border-bottom: 1px solid;
+    color: #8B0000;
+    cursor:pointer;
+}
+
+/*----- FIN CONVERTIR SUBMIT A ENLACE ------*/
+
+main div{
+    margin:20px;
+    width:40%;
+    background-color: white;
+    padding: 15px;
+}
+.fondofooter{
+    height: 219px;
+    background: url("../../images/footer1.jpg") no-repeat bottom;  
+    margin: 0 auto;
+    width: 619px;
+}
+.colheader{
+    background-color: #D8E4F2; 
+    width: 100%;
+    height: 219px;
+}
+main{
+    background-color: skyblue;
+    padding-bottom: 10px;
+}
+#contenedor {
+
+    width: 100%;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 15px;
+    box-shadow: 4px 3px 20px skyblue;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;	
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+a:visited{
+    color:black;
+    text-decoration: none;
+}
+a:link{
+    color:black;
+    text-decoration: none;   
+
+}
+
+
+
+/*------------------------------------------------------*/
+#contenedor {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (max-width: 575px) {
+
+    nav{
+        background-color: dodgerblue;
+    }
+
+    nav ul li a{
+        border-top:white 2px solid;
+        background-color: dodgerblue;
+    }
+        #cita{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contenido{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px; 
+        margin-bottom: 50px;
+    }
+
+
+}
+
+@media (min-width: 576px) {
+    #contenedor {
+        max-width: 540px;
+    }
+    #cita{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contenido{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;        
+    }
+    .contenido:last-child{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;        
+    }
+}
+
+@media (min-width: 768px) {
+    #contenedor {
+        max-width: 720px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    #contenedor {
+        max-width: 960px;
+    }
+    #main{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .citatorio,#cita{
+        margin: 0;
+
+        width: auto;
+        margin: 10px;
+    }
+    .contenido{
+        margin: 0;
+        width: 45%;
+        margin: 10px;
+    }
+    .contenido:last-child{
+        margin: 0;
+        width: 45%;      
+    }
+
+}
+
+@media (min-width: 1200px) {
+    #contenedor {
+        max-width: 1140px;
+    }
+}
+
+

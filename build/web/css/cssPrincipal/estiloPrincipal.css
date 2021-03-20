@@ -1,0 +1,378 @@
+/*Para copiar las clases de bootstrap en flex he cogido el metodo del archivo css del bootstrap y lo he metido en mi css para que quedara el boton igual*/
+/*---------------------- RESETEO ----------------------*/
+*{
+    margin: 0;
+    padding: 0;	
+}
+
+/* ---------- IDIOMA -----------*/
+.container-banderas form {
+    display: inline-block;
+}
+.container-banderas input[type="image"] {
+    width: 40px;
+    margin: 0px 5px;
+}
+.container-banderas input:hover{
+    transform: scale(1.15);
+    transition-property: transform;
+    transition-duration: 0.2s;
+    box-shadow: 1px 1px 8px #000;
+}
+/* FIN IDIOMA*/
+
+/*---------------------- NAV ---------------------*/
+.redIma{
+    max-width: 100%;
+    height: auto;
+}
+nav{
+    position: relative;
+    width: 100%;
+    background-color:#FFFFFF;
+    border-top: 2px solid dodgerblue;
+    border-bottom: 2px solid dodgerblue;
+    z-index: 1000;/*Para situarlo por encima del texto siemre*/
+    padding: 0;
+    margin: 0;
+}
+nav div{
+    padding: 0;
+    margin: 0;
+}
+nav div ul{
+    list-style: none;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav div ul li{    
+    display: inline-block;
+    position: relative;
+    text-align: center;	
+    font-weight: bold;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.m15{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+/*id para mayor especifidad*/
+#navP div ul li a{
+    color: black;
+
+}
+nav div ul li a{
+    display: block;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+nav div ul li:hover,nav ul li:active{
+    background: dodgerblue;
+    color:black;
+}
+
+nav div ul li a img{
+    margin-right: 10px; 
+    width: 22px;
+}
+/*---------------------- FIN NAV ---------------------*/
+
+/*---------------------- breadcrumb(migas de pan) ---------------------*/
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+/*---------------------- breadcrumb ---------------------*/
+
+
+#container {
+    max-width: 1400px;
+    position: relative;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin:0px;
+    padding: 0px;
+        padding-bottom: 15px;
+        
+    box-shadow: 4px 3px 20px skyblue;
+}
+
+
+
+.icono{  
+    max-height: 50px;
+    min-width: 30px;
+}
+.ocultar{
+    display:none;
+}
+.disenioHeader{
+    padding: 50px;
+
+}
+.margintop{
+    margin-top: 20px;    
+
+
+}
+.tamap{
+    width:50%;
+    align-content: flex-start;
+}
+.logomin{
+
+    min-width: 200px;  
+
+
+}
+
+.diseniologin{
+    padding: 50px;
+    background-color:skyblue;
+
+
+}
+.diseniologin input{
+    width:100%;
+
+
+}
+/*---*/
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+marginbajo{
+    margin-bottom: 50px;
+}
+.imagenCarrusel{
+    max-height: 150px;
+    min-height: 150px;
+}
+.margimagen{
+    border:1px solid skyblue;    
+
+
+}
+#main{
+    margin-top:30px;  
+}
+.bordebotuonblue{
+    color:white;
+    background-color:skyblue;
+    border-bottom: 2px solid skyblue;
+}
+
+
+.liststylelone{
+    list-style: none;
+
+}
+.fondito{
+    background-color: white;
+    box-shadow: 4px 3px 20px skyblue;
+}
+body{
+    background-color: #D8E4F2; 
+}
+.fondoNav{
+    height: 30px;
+    background: url("../images/boton-menu.jpg") repeat-x;  
+
+}
+.fondoNav:hover{
+    height: 30px;
+    background: url("../images/boton-menu2.jpg") repeat-x;  
+
+}
+.tam p{
+    font-size: 1vw;
+    width: 100%;
+
+}
+.btm{
+    border-top:2px solid skyblue;    
+
+}
+.bti{
+    border-left:2px solid skyblue;    
+
+}
+.btb{
+    border-bottom:2px solid skyblue;    
+
+}
+.mauto{
+    margin:0 auto;
+}
+.mbf{
+    padding-bottom: 15px;
+}
+@media (max-width: 1200px) {
+    .infoContacto {
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 991px) {
+    #container {
+       width: 100%;
+        
+    }
+    #encabezado{
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+    
+}
+@media (max-width: 768px) {
+    .sb {
+        margin-bottom: 5px;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    #carrusel {
+        display: none;
+    }
+    nav{
+        background-color: dodgerblue;
+    }
+
+    nav ul li a{
+        border-top:white 2px solid;
+        background-color: dodgerblue;
+    }
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+a:visited{
+    color:black;
+    text-decoration: none;
+}
+a:link{
+     color:black;
+    text-decoration: none;   
+    
+}
+
+/*  ----- FOOTER -----*/
+footer{
+    margin-top: 20px;
+}
+.fondofooter{
+    height: 219px;
+    background: url("../../images/footer1.jpg") no-repeat bottom;  
+    margin: 0 auto;
+    width: 619px;
+}
+.colheader{
+    background-color: #D8E4F2; 
+
+}
+.wboton{
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    #carrusel {
+        display: none;
+    }
+    nav{
+        background-color: dodgerblue;
+    }
+
+    nav ul li a{
+        border-top:white 2px solid;
+        background-color: dodgerblue;
+    }
+    .perro{
+        display:none
+    }
+
+}
+
+@media(max-width: 991px) {
+    #contenedor {
+        max-width: 720px;
+    }
+    .redIma{
+    max-width: 60%;
+    height: auto;
+}
+#divIconosLogin{
+    width: 30%;
+}
+.iconitos{
+    width:100%;
+}
+#navP{
+ margin-top: 100px;   
+}
+}
+
+@media (max-width: 1199px) {
+    #contenedor {
+        max-width: 960px;
+    }
+    .redIma{
+    max-width: 90%;
+    height: auto;
+}
+
+}
+
+@media (min-width: 1200px) {
+    #contenedor {
+        max-width: 1140px;
+    }
+ .redIma{
+    max-width: 100%;
+    height: auto;
+} 
+
+}

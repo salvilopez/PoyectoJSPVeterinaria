@@ -1,0 +1,346 @@
+/*Para copiar las clases de bootstrap en flex he cogido el metodo del archivo css del bootstrap y lo he metido en mi css para que quedara el boton igual*/
+
+*{
+    margin: 0;
+    padding: 0;	
+}
+body{
+    width: 100%;
+    background-color: #D8E4F2; 
+}
+#encabezado{
+    width:100%;
+    background-color: skyblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#encabezado div span{color:white;}
+#contenedor{
+    width: 100%;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 4px 3px 20px skyblue;
+
+}
+.mencabe{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+@media (min-width: 576px) {
+    #contenedor {
+        max-width: 540px;
+    }
+  
+}
+
+@media (min-width: 768px) {
+    #contenedor {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    #contenedor {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #contenedor {
+        max-width: 1140px;
+    }
+}
+
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;  
+    padding:0px;
+}
+.icono{  
+    max-height: 50px;
+    min-width: 30px;
+}
+.logomin{
+
+    min-width: 200px;  
+
+
+}
+#divIconosLogin{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ---------- IDIOMA -----------*/
+.container-banderas form {
+    display: inline-block;
+}
+.container-banderas input[type="image"] {
+    width: 40px;
+    margin: 0px 5px;
+}
+.container-banderas input:hover{
+    transform: scale(1.15);
+    transition-property: transform;
+    transition-duration: 0.2s;
+    box-shadow: 1px 1px 8px #000;
+}
+/* FIN IDIOMA*/
+
+/*---------------------- NAV ---------------------*/
+table{
+    text-align: center;
+}
+#botones{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+#botones form {
+   min-width: 200px;
+    width: 25%
+}
+#botones form input{
+    
+    width: 100%
+}
+nav{
+    position: relative;
+    width: 100%;
+    background-color:#FFFFFF;
+    border-top: 2px solid dodgerblue;
+    border-bottom: 2px solid dodgerblue;
+    z-index: 1000;/*Para situarlo por encima del texto siemre*/
+    padding: 0;
+    margin: 0;
+}
+nav div{
+    padding: 0;
+    margin: 0;
+}
+nav div ul{
+    list-style: none;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav div ul li{    
+    display: inline-block;
+    position: relative;
+    text-align: center;	
+    font-weight: bold;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+/*id para mayor especifidad*/
+#navP div ul li a{
+    color: black;
+
+}
+nav div ul li a{
+    display: block;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+nav div ul li:hover,nav ul li:active{
+    background: dodgerblue;
+    color:black;
+}
+
+nav div ul li a img{
+    margin-right: 10px; 
+    width: 22px;
+}
+.flexa{  
+    flex-direction: column;
+    align-items: center;
+
+}
+/*---------------------- FIN NAV ---------------------*/
+
+/*---------------------- breadcrumb(migas de pan) ---------------------*/
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+/*---------------------- breadcrumb ---------------------*/
+
+/*----------------------CUERPO---------------------*/
+
+h1{
+    text-align: center;
+    border-bottom: 2px solid dodgerblue;;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    font-size: 2.5em;
+    color: black;
+    text-shadow: 0px 0px 1px #320101;
+}
+
+.bTop input[type="text"]{
+    width: 30px;
+    text-align: center;
+}
+
+#carrito input[type="image"]{
+    height: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    min-width: 50px;
+}
+/* ---- FIN CUERPO ----*/
+
+/*Común para web y tablet*/
+@media (min-width: 768px) { 
+    #form1{
+        width:700px;
+    }
+    #contacto p{
+        margin: 0 15% 2% 7%;
+        width:700px;
+        font-family: 'Quicksand', sans-serif;
+        color: #666666;
+    }
+
+}
+
+@media (max-width: 768px) { 
+  #botones{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+#botones form {
+
+   min-width: 200px;
+    width: 80%;
+    margin:0 auto;
+        margin-top: 15px;
+    margin-bottom: 15px;
+}
+#botones form input{
+    
+    width: 100%
+}
+
+}
+
+
+.margintop{
+    margin-top: 20px;  
+}
+
+/* --- FOOTER ---*/
+footer{
+    margin-top: 20px;
+}
+
+.fondofooter{
+    height: 219px;
+    background: url("../../images/footer1.jpg") no-repeat bottom;  
+    margin: 0 auto;
+    width: 619px;
+}
+/* --- FIN FOOTER ---*/
+
+
+#contenedor{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: white;}
+
+
+
+/*---- TABLA CARRITO -------------*/
+#carrito {border-collapse: collapse;  width: 90%; margin: 0 auto}
+
+#carrito .bTop{
+    border-top: blue solid;
+    border-width: thin;
+}
+#carrito .bBottom{
+    border-bottom: blue solid;
+    border-width: thin;
+}
+
+#carrito tr, #carrito td { transition: .4s ease-in; } 
+
+#carrito .bTop:hover{
+    background: skyblue; pointer-events: visible;
+}
+#carrito .bTop:hover{ 
+    transform: scale(1.05); font-weight: 700; box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}
+/* ----- FIN TABLA CARRITO------*/
+
+
+
+
+/* ----- CONVERTIR SUBMIT A ENLACE ------*/
+.enlace {
+    display:inline;
+    border:0;
+    padding:0;
+    margin:0;
+    background:none;
+    color:#000088;
+    font-family: arial, sans-serif;
+    font-size: 1em;
+    line-height:1em;
+}
+
+.enlace:hover {
+    text-decoration:none;
+    color: crimson;
+    cursor:pointer;
+}
+/* ----- FIN ------*/
+
+a{
+    color:black;
+    text-decoration: none;
+}
+a:visited{
+    color:black;
+    text-decoration: none;
+}
+a:link{
+    color:black;
+    text-decoration: none;   
+
+}
+/* ----- FIN ------*/

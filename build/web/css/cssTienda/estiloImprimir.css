@@ -1,0 +1,37 @@
+#imagenCarrito,#imagenUsuario{
+    display:none;
+}
+ul,li,a{
+    display:none;
+}
+.container-banderas{
+    display:none;
+}
+#carrusel img{
+    width:100px;
+}
+.imagenCarrusel{
+    width: 150px;
+margin: 50px;
+}
+.carousel-item{ margin: 0 auto;
+    display: flex;
+       flex-direction:row;
+    width: 100%;
+}
+#exampleModal,#exampleModal2{
+    display:none;
+}
+#encabezado{
+    margin-bottom: 100px;
+}
+*{
+    text-align: center;
+    font-size: 16px;
+}
+.container-banderas {
+    display: none;
+}
+#newsletter{
+    display: none;
+}
